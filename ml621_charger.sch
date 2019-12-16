@@ -16,24 +16,6 @@ Comment4 ""
 $EndDescr
 Wire Wire Line
 	2600 3000 3350 3000
-Wire Wire Line
-	2600 3200 2600 3000
-NoConn ~ 2600 3500
-NoConn ~ 2600 3400
-NoConn ~ 2600 3300
-$Comp
-L Connector_Generic:Conn_01x05 J1
-U 1 1 5D7C896E
-P 2400 3400
-F 0 "J1" H 2318 2975 50  0000 C CNN
-F 1 "Conn_01x05" H 2318 3066 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 2400 3400 50  0001 C CNN
-F 3 "~" H 2400 3400 50  0001 C CNN
-	1    2400 3400
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2600 3600 3650 3600
 Connection ~ 3350 3000
 Text Label 2700 3000 0    50   ~ 0
 +4.9-5.4V
@@ -150,11 +132,10 @@ Wire Wire Line
 	3350 2400 3350 2700
 Wire Wire Line
 	3650 3600 4550 3600
-Connection ~ 3650 3600
 Wire Wire Line
 	4550 3000 5150 3000
 Wire Wire Line
-	4550 3600 5150 3600
+	4550 3600 4950 3600
 Connection ~ 4550 3600
 $Comp
 L Device:D_Schottky D2
@@ -177,4 +158,83 @@ Wire Wire Line
 Connection ~ 4550 3200
 Wire Wire Line
 	4550 3200 4550 3300
+$Comp
+L Connector:USB_B_Micro J1
+U 1 1 5DF6F8CD
+P 2300 3200
+F 0 "J1" H 2357 3667 50  0000 C CNN
+F 1 "USB_B_Micro" H 2357 3576 50  0000 C CNN
+F 2 "digikey-footprints:USB_Micro_B_Female_10118194-0001LF" H 2450 3150 50  0001 C CNN
+F 3 "~" H 2450 3150 50  0001 C CNN
+	1    2300 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 3600 3650 3600
+Connection ~ 3650 3600
+Wire Wire Line
+	2300 3600 2200 3600
+Connection ~ 2300 3600
+NoConn ~ 2600 3400
+NoConn ~ 2600 3300
+NoConn ~ 2600 3200
+$Comp
+L Device:LED D3
+U 1 1 5DF6FA9D
+P 6350 3450
+F 0 "D3" V 6389 3333 50  0000 R CNN
+F 1 "LED_3v_GRN" V 6298 3333 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 6350 3450 50  0001 C CNN
+F 3 "~" H 6350 3450 50  0001 C CNN
+	1    6350 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5DF700E4
+P 6100 3300
+F 0 "R6" V 5893 3300 50  0000 C CNN
+F 1 "100R" V 5984 3300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6030 3300 50  0001 C CNN
+F 3 "~" H 6100 3300 50  0001 C CNN
+	1    6100 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 3300 5950 3300
+Connection ~ 5700 3300
+Wire Wire Line
+	6250 3300 6350 3300
+Wire Wire Line
+	6350 3600 5700 3600
+Connection ~ 5700 3600
+$Comp
+L Device:LED D4
+U 1 1 5DF73081
+P 4950 3350
+F 0 "D4" V 4989 3232 50  0000 R CNN
+F 1 "LED_2v_RED" V 4898 3232 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 4950 3350 50  0001 C CNN
+F 3 "~" H 4950 3350 50  0001 C CNN
+	1    4950 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5DF73087
+P 4700 3200
+F 0 "R7" V 4493 3200 50  0000 C CNN
+F 1 "100R" V 4584 3200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4630 3200 50  0001 C CNN
+F 3 "~" H 4700 3200 50  0001 C CNN
+	1    4700 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4850 3200 4950 3200
+Wire Wire Line
+	4950 3500 4950 3600
+Connection ~ 4950 3600
+Wire Wire Line
+	4950 3600 5150 3600
 $EndSCHEMATC
