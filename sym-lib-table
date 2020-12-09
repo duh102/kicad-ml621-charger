@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name ml621_charger-rescue)(type Legacy)(uri ${KIPRJMOD}/ml621_charger-rescue.lib)(options "")(descr ""))
+)

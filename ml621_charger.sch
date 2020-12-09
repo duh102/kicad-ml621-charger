@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:ml621_charger-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -17,12 +16,12 @@ $EndDescr
 $Comp
 L Device:Battery_Cell BT1
 U 1 1 5D7A7B57
-P 4900 2550
-F 0 "BT1" H 5018 2646 50  0000 L CNN
-F 1 "ML621" H 5018 2555 50  0000 L CNN
-F 2 "Battery:BatteryHolder_Keystone_2998_621_6.8x2.2mm" V 4900 2610 50  0001 C CNN
-F 3 "~" V 4900 2610 50  0001 C CNN
-	1    4900 2550
+P 4900 2250
+F 0 "BT1" H 5018 2346 50  0000 L CNN
+F 1 "ML621" H 5018 2255 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Keystone_2998_621_6.8x2.2mm" V 4900 2310 50  0001 C CNN
+F 3 "~" V 4900 2310 50  0001 C CNN
+	1    4900 2250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -180,53 +179,43 @@ Wire Wire Line
 	3700 2200 3700 1800
 Wire Wire Line
 	3700 2500 3700 3100
-Connection ~ 3700 3100
 Wire Wire Line
 	3700 3100 3350 3100
 $Comp
 L dk_Transistors-FETs-MOSFETs-Single:BSS138 Q1
 U 1 1 5ECC513F
-P 4050 1800
-F 0 "Q1" V 4211 1800 60  0000 C CNN
-F 1 "BSS138" V 4317 1800 60  0000 C CNN
-F 2 "digikey-footprints:SOT-23-3" H 4250 2000 60  0001 L CNN
-F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 4250 2100 60  0001 L CNN
-F 4 "BSS138CT-ND" H 4250 2200 60  0001 L CNN "Digi-Key_PN"
-F 5 "BSS138" H 4250 2300 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 4250 2400 60  0001 L CNN "Category"
-F 7 "Transistors - FETs, MOSFETs - Single" H 4250 2500 60  0001 L CNN "Family"
-F 8 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 4250 2600 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/on-semiconductor/BSS138/BSS138CT-ND/244294" H 4250 2700 60  0001 L CNN "DK_Detail_Page"
-F 10 "MOSFET N-CH 50V 220MA SOT-23" H 4250 2800 60  0001 L CNN "Description"
-F 11 "ON Semiconductor" H 4250 2900 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 4250 3000 60  0001 L CNN "Status"
-	1    4050 1800
-	0    1    1    0   
+P 4900 2650
+F 0 "Q1" V 5061 2650 60  0000 C CNN
+F 1 "BSS138" V 5167 2650 60  0000 C CNN
+F 2 "digikey-footprints:SOT-23-3" H 5100 2850 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 5100 2950 60  0001 L CNN
+F 4 "BSS138CT-ND" H 5100 3050 60  0001 L CNN "Digi-Key_PN"
+F 5 "BSS138" H 5100 3150 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 5100 3250 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 5100 3350 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 5100 3450 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/BSS138/BSS138CT-ND/244294" H 5100 3550 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 50V 220MA SOT-23" H 5100 3650 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 5100 3750 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5100 3850 60  0001 L CNN "Status"
+	1    4900 2650
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R5
 U 1 1 5ECC848D
-P 4900 1950
-F 0 "R5" H 4970 1996 50  0000 L CNN
-F 1 "1kR" H 4970 1905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 4830 1950 50  0001 C CNN
-F 3 "~" H 4900 1950 50  0001 C CNN
-	1    4900 1950
-	1    0    0    -1  
+P 4300 1800
+F 0 "R5" H 4370 1846 50  0000 L CNN
+F 1 "1kR" H 4370 1755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4230 1800 50  0001 C CNN
+F 3 "~" H 4300 1800 50  0001 C CNN
+	1    4300 1800
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	3350 1800 3700 1800
 Wire Wire Line
-	4900 3100 4900 2650
-Wire Wire Line
-	3700 3100 4900 3100
-Wire Wire Line
-	4900 2350 4900 2100
-Wire Wire Line
-	4900 1800 4250 1800
-Wire Wire Line
-	3850 1800 3700 1800
-Connection ~ 3700 1800
+	4900 2050 4900 1800
 $Comp
 L Device:R R3
 U 1 1 5ECD72B2
@@ -238,7 +227,7 @@ F 3 "~" H 4000 4750 50  0001 C CNN
 	1    4000 4750
 	0    1    1    0   
 $EndComp
-Text GLabel 4900 2250 2    50   Input ~ 0
+Text GLabel 4900 1950 2    50   Input ~ 0
 VBAT
 Text GLabel 2700 4150 1    50   Input ~ 0
 V_REG
@@ -277,10 +266,10 @@ Text GLabel 3500 4650 2    50   Input ~ 0
 VBAT
 Wire Wire Line
 	3500 4650 3300 4650
-Text GLabel 3950 1000 1    50   Input ~ 0
+Text GLabel 4500 2350 1    50   Input ~ 0
 BGATE
 Wire Wire Line
-	3950 1400 3950 1500
+	4500 2750 4600 2750
 Text GLabel 3500 4550 2    50   Input ~ 0
 BGATE
 Wire Wire Line
@@ -288,16 +277,28 @@ Wire Wire Line
 $Comp
 L Device:R R4
 U 1 1 5ECE28A8
-P 3950 1250
-F 0 "R4" H 4020 1296 50  0000 L CNN
-F 1 "20R" H 4020 1205 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 3880 1250 50  0001 C CNN
-F 3 "~" H 3950 1250 50  0001 C CNN
-	1    3950 1250
+P 4500 2600
+F 0 "R4" H 4570 2646 50  0000 L CNN
+F 1 "20R" H 4570 2555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4430 2600 50  0001 C CNN
+F 3 "~" H 4500 2600 50  0001 C CNN
+	1    4500 2600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3950 1000 3950 1100
+	4500 2350 4500 2450
 Wire Wire Line
 	4150 4750 4250 4750
+Wire Wire Line
+	3700 1800 4150 1800
+Connection ~ 3700 1800
+Wire Wire Line
+	4900 1800 4450 1800
+Wire Wire Line
+	4900 2350 4900 2450
+Wire Wire Line
+	4900 2850 4900 3100
+Wire Wire Line
+	4900 3100 3700 3100
+Connection ~ 3700 3100
 $EndSCHEMATC
